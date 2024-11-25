@@ -1,86 +1,100 @@
 [
     {
         "show": "doctor_who",
+        "showName": "Doctor Who (2005)",
         "id": "1",
         "name": "Season 1",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s01"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s01"
     },
     {
         "show": "doctor_who",
+        "showName": "Doctor Who (2005)",
         "id": "2",
         "name": "Season 2",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s02"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s02"
     },
     {
         "show": "doctor_who",
+        "showName": "Doctor Who (2005)",
         "id": "3",
         "name": "Season 3",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s03"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s03"
     },
     {
         "show": "doctor_who",
+        "showName": "Doctor Who (2005)",
         "id": "4",
         "name": "Season 4",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s04"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s04"
     },
     {
         "show": "doctor_who",
+        "showName": "Doctor Who (2005)",
         "id": "5",
         "name": "Season 5",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s05"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s05"
     },
     {
         "show": "doctor_who",
+        "showName": "Doctor Who (2005)",
         "id": "6",
         "name": "Season 6",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s06"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s06"
     },
     {
         "show": "doctor_who",
+        "showName": "Doctor Who (2005)",
         "id": "7",
         "name": "Season 7",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s07"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s07"
     },
     {
         "show": "doctor_who",
+        "showName": "Doctor Who (2005)",
         "id": "8",
         "name": "Season 8",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s08"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s08"
     },
     {
         "show": "doctor_who",
+        "showName": "Doctor Who (2005)",
         "id": "9",
         "name": "Season 9",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s09"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s09"
     },
     {
         "show": "doctor_who",
+        "showName": "Doctor Who (2005)",
         "id": "10",
         "name": "Season 10",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s10"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s10"
     },
     {
         "show": "doctor_who",
+        "showName": "Doctor Who (2005)",
         "id": "11",
         "name": "Season 11",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s11"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s11"
     },
     {
         "show": "doctor_who",
+        "showName": "Doctor Who (2005)",
         "id": "12",
         "name": "Season 12",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s12"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s12"
     },
     {
         "show": "doctor_who",
+        "showName": "Doctor Who (2005)",
         "id": "13",
         "name": "Flux",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s13"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s13"
     },
     {
         "show": "doctor_who_2023",
+        "showName": "Doctor Who (2023)",
         "id": "1",
         "name": "Season 1",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who_2023/s01"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who_2023/s01"
     }
 ]

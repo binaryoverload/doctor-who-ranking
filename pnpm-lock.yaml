@@ -17,6 +17,9 @@ importers:
       '@inox-tools/runtime-logger':
         specifier: ^0.3.5
         version: 0.3.5(astro@4.16.14(@types/node@22.9.3)(rollup@4.27.4)(typescript@5.7.2))
+      ag-charts-community:
+        specifier: ^10.3.3
+        version: 10.3.3
       astro:
         specifier: ^4.16.13
         version: 4.16.14(@types/node@22.9.3)(rollup@4.27.4)(typescript@5.7.2)
@@ -678,6 +681,15 @@ packages:
     resolution: {integrity: sha512-cl669nCJTZBsL97OF4kUQm5g5hC2uihk0NxY3WENAC0TYdILVkAyHymAntgxGkl7K+t0cXIrH5siy5S4XkFycA==}
     engines: {node: '>=0.4.0'}
     hasBin: true
+
+  ag-charts-community@10.3.3:
+    resolution: {integrity: sha512-LUlbVS+4sX1UHqZNuE9m3LISr7D4FEO/Y88fwit1fYPTk2l1ZJG/82gFnm5bQ+iG4QgNIwRa2TWm7w2MLnyJlA==}
+
+  ag-charts-locale@10.3.3:
+    resolution: {integrity: sha512-+ZAQYhkFHbdEwLYP1jZeF44X/8wwSH6SNiTykEIIk6EUuP6mm45X2YfQ0bvyekTkEJlLvFspvRQ+C6mspwLx4w==}
+
+  ag-charts-types@10.3.3:
+    resolution: {integrity: sha512-8rmyquaTkwfP4Lzei/W/cbkq9wwEl8+grIo3z97mtxrMIXh9sHJK1oJipd/u08MmBZrca5Jjtn5F1+UNPu/4fQ==}
 
   ajv@8.17.1:
     resolution: {integrity: sha512-B/gBuNg5SiMTrPkC+A2+cW0RszwxYmn6VYxB/inlBStS5nx6xHIt/ehKRhIMhqusl7a8LjQoZnjCs5vhwxOQ1g==}
@@ -2857,6 +2869,15 @@ snapshots:
   '@vscode/l10n@0.0.18': {}
 
   acorn@8.14.0: {}
+
+  ag-charts-community@10.3.3:
+    dependencies:
+      ag-charts-locale: 10.3.3
+      ag-charts-types: 10.3.3
+
+  ag-charts-locale@10.3.3: {}
+
+  ag-charts-types@10.3.3: {}
 
   ajv@8.17.1:
     dependencies:

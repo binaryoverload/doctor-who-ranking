@@ -17,10 +17,10 @@ const downloadedData = await downloadData();
       downloadedData.map((data) => (
         <div>
           <h1>{data.name}</h1>
-          {data.rotten_tomatoes_data ? (
+          {data.rottenTomatoesData ? (
             <div>
-              <p>Critic Score: {data.rotten_tomatoes_data.critics?.score}</p>
-              <p>Audience Score: {data.rotten_tomatoes_data.audience?.score}</p>
+              <p>Critic Score: {data.rottenTomatoesData.critics?.score}</p>
+              <p>Audience Score: {data.rottenTomatoesData.audience?.score}</p>
             </div>
           ) : (
             <p>No data</p>
@@ -28,5 +28,73 @@ const downloadedData = await downloadData();
         </div>
       ))
     }
+    <div id="chart"></div>
+    <script>
+      import type { SeasonData } from "../downloadData";
+      import { AgCharts, type AgChartOptions } from "ag-charts-community";
+
+      declare global {
+        interface Window {
+          setupChart(data: SeasonData[]): void;
+        }
+      }
+
+      window.setupChart = (data) => {
+        const options: AgChartOptions = {
+          container: document.getElementById("chart"),
+          title: {
+            text: "Score Comparison",
+          },
+          data: data.map((d) => ({
+            id: `${d.showName} - ${d.id}`,
+            criticScore: +(d.rottenTomatoesData?.critics?.score ?? "0"),
+            audienceScore: +(d.rottenTomatoesData?.audience?.score ?? "0"),
+          })),
+          axes: [
+            {
+              type: "number",
+              position: "left",
+              min: 0,
+              max: 100,
+              label: {
+                formatter: function (params) {
+                  return params.value + "%";
+                },
+              },
+            },
+            {
+              type: "category",
+              position: "bottom",
+              label: {
+                formatter: function (params) {
+                  return "Season " + params.value.split(" - ")[1];
+                },
+              },
+            },
+          ],
+          series: [
+            {
+              type: "line",
+              xKey: "id",
+              yKey: "criticScore",
+              yName: "Critic Score",
+            },
+            {
+              type: "line",
+              xKey: "id",
+              yKey: "audienceScore",
+              yName: "Audience Score",
+            },
+          ],
+        };
+
+        AgCharts.create(options);
+      };
+    </script>
+    <script define:vars={{ downloadedData }}>
+      document.addEventListener("DOMContentLoaded", () => {
+        setupChart(downloadedData);
+      });
+    </script>
   </body>
 </html>

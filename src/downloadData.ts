@@ -24,17 +24,19 @@ type RTData = {
     } | null;
 }
 
-type SeasonData = {
+export type SeasonData = {
     show: string;
+    showName: string;
     id: string;
     name: string;
-    rotten_tomatoes_url: string;
-    rotten_tomatoes_data?: RTData;
+    rottenTomatoesUrl: string;
+    rottenTomatoesData?: RTData;
     special?: boolean | undefined;
 }
 
 type Cache = {
     sourceHash: string;
+    lastUpdated: string;
     data: SeasonData[];
 }
 
@@ -48,12 +50,17 @@ export async function downloadData() {
             logger.info("Attempting to read data from cache");
             const cacheData = JSON.parse(await fs.readFile("data-cache.json", 'utf-8')) as Cache;
 
-            if (cacheData.sourceHash === sourceHash) {
+            const lastUpdated = new Date(cacheData.lastUpdated);
+            const isOlderThan1Day = (Date.now() - lastUpdated.getTime()) > 1000 * 60 * 60 * 24;
+
+            if (cacheData.sourceHash === sourceHash && !isOlderThan1Day) {
                 logger.info("Cache is up to date, using cached data");
                 return cacheData.data;
             }
 
-            logger.info("Cache is outdated, redownloading data");
+            const reason = cacheData.sourceHash !== sourceHash ? "source hash mismatch" : "cache is older than 1 day";
+
+            logger.info(`Cache is outdated (${reason}), redownloading data`);
         } catch {}
     }
 
@@ -64,14 +71,15 @@ export async function downloadData() {
     for (const season of seasonData) {
         logger.info(`Downloading data for season ${season.id} (${season.name})`);
         
-        const rtData = await downloadRTData(season.rotten_tomatoes_url);
+        const rtData = await downloadRTData(season.rottenTomatoesUrl);
     
-        season.rotten_tomatoes_data = rtData;
+        season.rottenTomatoesData = rtData;
     }
 
     if (import.meta.env.DEV) {
         const cacheData: Cache = {
             sourceHash,
+            lastUpdated: new Date().toISOString(),
             data: seasonData
         }
         await fs.writeFile("data-cache.json", JSON.stringify(cacheData, null, 2))
@@ -94,6 +102,7 @@ async function downloadRTData(rtUrl: string): Promise<RTData> {
             notLikedCount: mediaData.criticsScore.notLikedCount,
             reviewCount: mediaData.criticsScore.reviewCount
         } : null,
+
         audience: mediaData.audienceScore.score ?{
             score: mediaData.audienceScore.score,
             rating: mediaData.audienceScore.averageRating,
