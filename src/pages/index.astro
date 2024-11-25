@@ -13,6 +13,20 @@ const downloadedData = await downloadData();
     <title>Astro</title>
   </head>
   <body>
-    <p>{JSON.stringify(downloadedData)}</p>
+    {
+      downloadedData.map((data) => (
+        <div>
+          <h1>{data.name}</h1>
+          {data.rotten_tomatoes_data ? (
+            <div>
+              <p>Critic Score: {data.rotten_tomatoes_data.critics?.score}</p>
+              <p>Audience Score: {data.rotten_tomatoes_data.audience?.score}</p>
+            </div>
+          ) : (
+            <p>No data</p>
+          )}
+        </div>
+      ))
+    }
   </body>
 </html>
