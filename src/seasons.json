@@ -5,6 +5,7 @@
         "id": "1",
         "name": "Season 1",
         "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s01",
+        "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-1",
         "tmdb": {
             "seriesId": 57243,
             "seasonId": 58468
@@ -16,6 +17,7 @@
         "id": "2",
         "name": "Season 2",
         "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s02",
+        "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-2",
         "tmdb": {
             "seriesId": 57243,
             "seasonId": 58469
@@ -27,6 +29,7 @@
         "id": "3",
         "name": "Season 3",
         "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s03",
+        "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-3",
         "tmdb": {
             "seriesId": 57243,
             "seasonId": 58470
@@ -38,6 +41,7 @@
         "id": "4",
         "name": "Season 4",
         "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s04",
+        "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-4",
         "tmdb": {
             "seriesId": 57243,
             "seasonId": 58471
@@ -49,6 +53,7 @@
         "id": "5",
         "name": "Season 5",
         "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s05",
+        "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-5",
         "tmdb": {
             "seriesId": 57243,
             "seasonId": 58472
@@ -60,7 +65,9 @@
         "id": "6",
         "name": "Season 6",
         "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s06",
+        "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-6",
         "tmdb": {
+
             "seriesId": 57243,
             "seasonId": 58473
         }
@@ -71,6 +78,7 @@
         "id": "7",
         "name": "Season 7",
         "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s07",
+        "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-7",
         "tmdb": {
             "seriesId": 57243,
             "seasonId": 58474
@@ -82,6 +90,7 @@
         "id": "8",
         "name": "Season 8",
         "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s08",
+        "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-8",
         "tmdb": {
             "seriesId": 57243,
             "seasonId": 58475
@@ -93,6 +102,7 @@
         "id": "9",
         "name": "Season 9",
         "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s09",
+        "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-9",
         "tmdb": {
             "seriesId": 57243,
             "seasonId": 64188
@@ -104,6 +114,7 @@
         "id": "10",
         "name": "Season 10",
         "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s10",
+        "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-10",
         "tmdb": {
             "seriesId": 57243,
             "seasonId": 76615
@@ -115,6 +126,7 @@
         "id": "11",
         "name": "Season 11",
         "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s11",
+        "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-11",
         "tmdb": {
             "seriesId": 57243,
             "seasonId": 97100
@@ -126,6 +138,7 @@
         "id": "12",
         "name": "Season 12",
         "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s12",
+        "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-12",
         "tmdb": {
             "seriesId": 57243,
             "seasonId": 135741
@@ -137,6 +150,7 @@
         "id": "13",
         "name": "Flux",
         "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s13",
+        "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-13",
         "tmdb": {
             "seriesId": 57243,
             "seasonId": 175012
@@ -148,6 +162,7 @@
         "id": "1",
         "name": "Season 1",
         "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who_2023/s01",
+        "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who-2024/season-1",
         "tmdb": {
             "seriesId": 239770,
             "seasonId": 366207

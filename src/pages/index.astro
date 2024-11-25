@@ -1,7 +1,9 @@
 ---
+import { mapDataForChart } from "../chart";
 import { downloadData } from "../downloadData";
 
 const downloadedData = await downloadData();
+const chartData = mapDataForChart(downloadedData);
 ---
 
 <html lang="en">
@@ -13,107 +15,49 @@ const downloadedData = await downloadData();
     <title>Astro</title>
   </head>
   <body>
-    {
-      downloadedData.map((data) => (
-        <div>
-          <h1>{data.name}</h1>
-          {data.rottenTomatoesData ? (
-            <div>
-              <p>Critic Score: {data.rottenTomatoesData.critics?.score}</p>
-              <p>Audience Score: {data.rottenTomatoesData.audience?.score}</p>
-            </div>
-          ) : (
-            <p>No data</p>
-          )}
-        </div>
-      ))
-    }
+    <table>
+      <thead>
+        <tr>
+          <th>Season</th>
+          <th>Show</th>
+          <th>RT Critic</th>
+          <th>RT Audience</th>
+          <th>MC Critic</th>
+          <th>MC User</th>
+          <th>TMDB</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          downloadedData.map((data) => (
+            <tr>
+              <td>{data.name}</td>
+              <td>{data.showName}</td>
+              <td>{data.rottenTomatoesData?.critics?.score}</td>
+              <td>{data.rottenTomatoesData?.audience?.score}</td>
+              <td>{data.metaCriticData?.metaScore}</td>
+              <td>{data.metaCriticData?.userScore}</td>
+              <td>{data.tmdbData?.voteAverage}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
     <div id="chart"></div>
     <script>
-      import type { SeasonData } from "../downloadData";
-      import { AgCharts, type AgChartOptions } from "ag-charts-community";
+      import { setupChart } from "../chart";
 
       declare global {
         interface Window {
-          setupChart(data: SeasonData[]): void;
+          setupChart: typeof setupChart;
         }
       }
 
-      window.setupChart = (data) => {
-        const options: AgChartOptions = {
-          container: document.getElementById("chart"),
-          title: {
-            text: "Score Comparison",
-          },
-          data: data.map((d) => ({
-            id: `${d.showName} - ${d.id}`,
-            criticScore: +(d.rottenTomatoesData?.critics?.score ?? "0"),
-            audienceScore: +(d.rottenTomatoesData?.audience?.score ?? "0"),
-            tmdbScore: +(d.tmdbData?.voteAverage ?? "0"),
-          })),
-          axes: [
-            {
-              type: "number",
-              position: "left",
-              min: 0,
-              max: 100,
-              label: {
-                formatter: function (params) {
-                  return params.value + "%";
-                },
-              },
-              keys: ["criticScore", "audienceScore"],
-            },
-            {
-              type: "number",
-              position: "right",
-              min: 0,
-              max: 10,
-              label: {
-                formatter: function (params) {
-                  return params.value.toFixed(1);
-                },
-              },
-              keys: ["tmdbScore"],
-            },
-            {
-              type: "category",
-              position: "bottom",
-              label: {
-                formatter: function (params) {
-                  return "Season " + params.value.split(" - ")[1];
-                },
-              },
-            },
-          ],
-          series: [
-            {
-              type: "line",
-              xKey: "id",
-              yKey: "criticScore",
-              yName: "Critic Score",
-            },
-            {
-              type: "line",
-              xKey: "id",
-              yKey: "audienceScore",
-              yName: "Audience Score",
-            },
-            {
-              type: "line",
-              xKey: "id",
-              yKey: "tmdbScore",
-              yName: "TMDB Score",
-            },
-          ],
-        };
-
-        AgCharts.create(options);
-      };
+      window.setupChart = setupChart;
     </script>
-    <script define:vars={{ downloadedData }}>
+    <script is:inline define:vars={{ chartData }}>
       document.addEventListener("DOMContentLoaded", () => {
-        setupChart(downloadedData);
+        window.setupChart(chartData, document.getElementById("chart"));
       });
     </script>
   </body>

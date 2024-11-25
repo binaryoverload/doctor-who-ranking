@@ -24,6 +24,11 @@ type RTSeasonData = {
   } | null;
 };
 
+type MetaCriticData = {
+  metaScore: number | null;
+  userScore: number | null;
+};
+
 type TmdbSeasonApiData = {
   id: number;
   name: string;
@@ -46,12 +51,14 @@ export type SeasonData = {
   id: string;
   name: string;
   rottenTomatoesUrl: string;
+  metaCriticUrl: string;
   tmdb: {
     seriesId: number;
     seasonId: number;
   };
   tmdbData?: TmdbSeasonData;
   rottenTomatoesData?: RTSeasonData;
+  metaCriticData?: MetaCriticData;
   special?: boolean | undefined;
 };
 
@@ -129,11 +136,13 @@ export async function downloadData() {
     logger.info(`Downloading data for season ${season.id} (${season.name})`);
 
     const rtData = await downloadRTData(season.rottenTomatoesUrl);
+    const metaCriticData = await downloadMetaCriticData(season.metaCriticUrl);
     const tmdbData = tmdbSeasons.find(
       (seasonData) => season.tmdb.seasonId === seasonData.id
     );
 
     season.rottenTomatoesData = rtData;
+    season.metaCriticData = metaCriticData;
     season.tmdbData = tmdbData;
   }
 
@@ -149,6 +158,7 @@ export async function downloadData() {
 }
 
 async function downloadRTData(rtUrl: string): Promise<RTSeasonData> {
+  logger.debug(`Downloading data from ${rtUrl}`);
   const page = await fetch(rtUrl).then((res) => res.text());
   const $ = cheerio.load(page);
   const mediaDataJson = $("#media-scorecard-json").text();
@@ -178,6 +188,23 @@ async function downloadRTData(rtUrl: string): Promise<RTSeasonData> {
       : null,
   };
 
+  logger.debug(`Finished downloading data from ${rtUrl}`);
+  return data;
+}
+
+async function downloadMetaCriticData(metaCriticUrl: string): Promise<MetaCriticData> {
+  logger.debug(`Downloading data from ${metaCriticUrl}`);
+  const page = await fetch(metaCriticUrl).then((res) => res.text());
+  const $ = cheerio.load(page);
+  const metaScore = $(".c-productHero_scoreInfo .c-siteReviewScore[title*=\"Metascore\"] span").text();
+  const userScore = $(".c-productHero_scoreInfo .c-siteReviewScore[title*=\"User score\"] span").text();
+  console.log(metaScore, userScore);
+  const data = {
+    metaScore: Number(metaScore) || null,
+    userScore: Number(userScore) || null,
+  };
+  console.log(data);
+  logger.debug(`Finished downloading data from ${metaCriticUrl}`);
   return data;
 }
 
