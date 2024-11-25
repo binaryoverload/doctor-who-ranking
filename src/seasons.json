@@ -25,20 +25,6 @@
     },
     {
         "show": "doctor_who",
-        "id": "4.1",
-        "special": true,
-        "name": "The End of Time: Part 1",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s04.1"
-    },
-    {
-        "show": "doctor_who",
-        "id": "4.2",
-        "special": true,
-        "name": "The End of Time: Part 2",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s04.2"
-    },
-    {
-        "show": "doctor_who",
         "id": "5",
         "name": "Season 5",
         "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s05"
@@ -51,51 +37,9 @@
     },
     {
         "show": "doctor_who",
-        "id": "6.1",
-        "special": true,
-        "name": "A Christmas Carol",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s06.1"
-    },
-    {
-        "show": "doctor_who",
-        "id": "6.2",
-        "special": true,
-        "name": "The Doctor, the Widow and the Wardrobe",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s06.2"
-    },
-    {
-        "show": "doctor_who",
         "id": "7",
         "name": "Season 7",
         "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s07"
-    },
-    {
-        "show": "doctor_who",
-        "id": "7.1",
-        "special": true,
-        "name": "Christmas 2012 -- The Snowmen",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s07.1"
-    },
-    {
-        "show": "doctor_who",
-        "id": "7.2",
-        "special": true,
-        "name": "The Night of the Doctor",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s07.2"
-    },
-    {
-        "show": "doctor_who",
-        "id": "7.3",
-        "special": true,
-        "name": "The Day of the Doctor",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s07.3"
-    },
-    {
-        "show": "doctor_who",
-        "id": "7.4",
-        "special": true,
-        "name": "The Time of the Doctor",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s07.4"
     },
     {
         "show": "doctor_who",
@@ -105,30 +49,9 @@
     },
     {
         "show": "doctor_who",
-        "id": "8.1",
-        "special": true,
-        "name": "Last Christmas",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s08.1"
-    },
-    {
-        "show": "doctor_who",
         "id": "9",
         "name": "Season 9",
         "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s09"
-    },
-    {
-        "show": "doctor_who",
-        "id": "9.1",
-        "special": true,
-        "name": "The Husbands of River Song",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s09.1"
-    },
-    {
-        "show": "doctor_who",
-        "id": "9.2",
-        "special": true,
-        "name": "The Return of Doctor Mysterio",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s09.2"
     },
     {
         "show": "doctor_who",
@@ -138,23 +61,9 @@
     },
     {
         "show": "doctor_who",
-        "id": "10.1",
-        "special": true,
-        "name": "Twice Upon a Time",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s10.1"
-    },
-    {
-        "show": "doctor_who",
         "id": "11",
         "name": "Season 11",
         "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s11"
-    },
-    {
-        "show": "doctor_who",
-        "id": "11.1",
-        "special": true,
-        "name": "Resolution",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s11.1"
     },
     {
         "show": "doctor_who",
@@ -164,51 +73,9 @@
     },
     {
         "show": "doctor_who",
-        "id": "12.1",
-        "special": true,
-        "name": "Revolution of the Daleks",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s12.1"
-    },
-    {
-        "show": "doctor_who",
         "id": "13",
         "name": "Flux",
         "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s13"
-    },
-    {
-        "show": "doctor_who",
-        "id": "13.1",
-        "special": true,
-        "name": "Eve of the Daleks",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s13.1"
-    },
-    {
-        "show": "doctor_who",
-        "id": "13.2",
-        "special": true,
-        "name": "Legend of the Sea Devils",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s13.2"
-    },
-    {
-        "show": "doctor_who",
-        "id": "13.3",
-        "special": true,
-        "name": "The Power of the Doctor",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who/s13.3"
-    },
-    {
-        "show": "doctor_who_2023",
-        "id": "0",
-        "special": true,
-        "name": "60th Anniversary Specials",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who_2023/s00"
-    },
-    {
-        "show": "doctor_who_2023",
-        "id": "0.1",
-        "special": true,
-        "name": "The Church on Ruby Road",
-        "rotten_tomatoes_url": "https://www.rottentomatoes.com/tv/doctor_who_2023/s00.1"
     },
     {
         "show": "doctor_who_2023",
