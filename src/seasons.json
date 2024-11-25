@@ -1,100 +1,156 @@
 [
     {
-        "show": "doctor_who",
+        "showId": "doctor_who",
         "showName": "Doctor Who (2005)",
         "id": "1",
         "name": "Season 1",
-        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s01"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s01",
+        "tmdb": {
+            "seriesId": 57243,
+            "seasonId": 58468
+        }
     },
     {
-        "show": "doctor_who",
+        "showId": "doctor_who",
         "showName": "Doctor Who (2005)",
         "id": "2",
         "name": "Season 2",
-        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s02"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s02",
+        "tmdb": {
+            "seriesId": 57243,
+            "seasonId": 58469
+        }
     },
     {
-        "show": "doctor_who",
+        "showId": "doctor_who",
         "showName": "Doctor Who (2005)",
         "id": "3",
         "name": "Season 3",
-        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s03"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s03",
+        "tmdb": {
+            "seriesId": 57243,
+            "seasonId": 58470
+        }
     },
     {
-        "show": "doctor_who",
+        "showId": "doctor_who",
         "showName": "Doctor Who (2005)",
         "id": "4",
         "name": "Season 4",
-        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s04"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s04",
+        "tmdb": {
+            "seriesId": 57243,
+            "seasonId": 58471
+        }
     },
     {
-        "show": "doctor_who",
+        "showId": "doctor_who",
         "showName": "Doctor Who (2005)",
         "id": "5",
         "name": "Season 5",
-        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s05"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s05",
+        "tmdb": {
+            "seriesId": 57243,
+            "seasonId": 58472
+        }
     },
     {
-        "show": "doctor_who",
+        "showId": "doctor_who",
         "showName": "Doctor Who (2005)",
         "id": "6",
         "name": "Season 6",
-        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s06"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s06",
+        "tmdb": {
+            "seriesId": 57243,
+            "seasonId": 58473
+        }
     },
     {
-        "show": "doctor_who",
+        "showId": "doctor_who",
         "showName": "Doctor Who (2005)",
         "id": "7",
         "name": "Season 7",
-        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s07"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s07",
+        "tmdb": {
+            "seriesId": 57243,
+            "seasonId": 58474
+        }
     },
     {
-        "show": "doctor_who",
+        "showId": "doctor_who",
         "showName": "Doctor Who (2005)",
         "id": "8",
         "name": "Season 8",
-        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s08"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s08",
+        "tmdb": {
+            "seriesId": 57243,
+            "seasonId": 58475
+        }
     },
     {
-        "show": "doctor_who",
+        "showId": "doctor_who",
         "showName": "Doctor Who (2005)",
         "id": "9",
         "name": "Season 9",
-        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s09"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s09",
+        "tmdb": {
+            "seriesId": 57243,
+            "seasonId": 64188
+        }
     },
     {
-        "show": "doctor_who",
+        "showId": "doctor_who",
         "showName": "Doctor Who (2005)",
         "id": "10",
         "name": "Season 10",
-        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s10"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s10",
+        "tmdb": {
+            "seriesId": 57243,
+            "seasonId": 76615
+        }
     },
     {
-        "show": "doctor_who",
+        "showId": "doctor_who",
         "showName": "Doctor Who (2005)",
         "id": "11",
         "name": "Season 11",
-        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s11"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s11",
+        "tmdb": {
+            "seriesId": 57243,
+            "seasonId": 97100
+        }
     },
     {
-        "show": "doctor_who",
+        "showId": "doctor_who",
         "showName": "Doctor Who (2005)",
         "id": "12",
         "name": "Season 12",
-        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s12"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s12",
+        "tmdb": {
+            "seriesId": 57243,
+            "seasonId": 135741
+        }
     },
     {
-        "show": "doctor_who",
+        "showId": "doctor_who",
         "showName": "Doctor Who (2005)",
         "id": "13",
         "name": "Flux",
-        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s13"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s13",
+        "tmdb": {
+            "seriesId": 57243,
+            "seasonId": 175012
+        }
     },
     {
-        "show": "doctor_who_2023",
+        "showId": "doctor_who_2023",
         "showName": "Doctor Who (2023)",
         "id": "1",
         "name": "Season 1",
-        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who_2023/s01"
+        "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who_2023/s01",
+        "tmdb": {
+            "seriesId": 239770,
+            "seasonId": 366207
+        }
     }
 ]

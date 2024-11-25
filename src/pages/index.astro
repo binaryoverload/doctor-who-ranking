@@ -49,6 +49,7 @@ const downloadedData = await downloadData();
             id: `${d.showName} - ${d.id}`,
             criticScore: +(d.rottenTomatoesData?.critics?.score ?? "0"),
             audienceScore: +(d.rottenTomatoesData?.audience?.score ?? "0"),
+            tmdbScore: +(d.tmdbData?.voteAverage ?? "0"),
           })),
           axes: [
             {
@@ -61,6 +62,19 @@ const downloadedData = await downloadData();
                   return params.value + "%";
                 },
               },
+              keys: ["criticScore", "audienceScore"],
+            },
+            {
+              type: "number",
+              position: "right",
+              min: 0,
+              max: 10,
+              label: {
+                formatter: function (params) {
+                  return params.value.toFixed(1);
+                },
+              },
+              keys: ["tmdbScore"],
             },
             {
               type: "category",
@@ -84,6 +98,12 @@ const downloadedData = await downloadData();
               xKey: "id",
               yKey: "audienceScore",
               yName: "Audience Score",
+            },
+            {
+              type: "line",
+              xKey: "id",
+              yKey: "tmdbScore",
+              yName: "TMDB Score",
             },
           ],
         };
