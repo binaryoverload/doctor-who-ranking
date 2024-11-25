@@ -198,12 +198,10 @@ async function downloadMetaCriticData(metaCriticUrl: string): Promise<MetaCritic
   const $ = cheerio.load(page);
   const metaScore = $(".c-productHero_scoreInfo .c-siteReviewScore[title*=\"Metascore\"] span").text();
   const userScore = $(".c-productHero_scoreInfo .c-siteReviewScore[title*=\"User score\"] span").text();
-  console.log(metaScore, userScore);
   const data = {
     metaScore: Number(metaScore) || null,
     userScore: Number(userScore) || null,
   };
-  console.log(data);
   logger.debug(`Finished downloading data from ${metaCriticUrl}`);
   return data;
 }
