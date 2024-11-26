@@ -1,0 +1,14 @@
+---
+import FootnoteNum from "./FootnoteNum.astro";
+
+type Props = {
+  num: number;
+};
+---
+
+<p id=`footnote-${Astro.props.num}` class="group">
+  <FootnoteNum num={Astro.props.num} />
+  <span class="group-target:bg-yellow-200">
+    <slot />
+  </span>
+</p>

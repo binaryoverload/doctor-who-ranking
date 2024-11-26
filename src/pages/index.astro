@@ -1,5 +1,7 @@
 ---
 import { mapDataForChart } from "../chart";
+import FootnoteNum from "../components/FootnoteNum.astro";
+import FootnoteRef from "../components/FootnoteRef.astro";
 import { downloadData } from "../downloadData";
 import { avg, round } from "../util";
 
@@ -16,37 +18,41 @@ const chartData = mapDataForChart(downloadedData);
     <title>Astro</title>
   </head>
   <body>
-    <table>
-      <thead>
-        <tr>
+    <table class="border border-slate-500 text-left">
+      <thead class="border-b border-slate-700">
+        <tr class="[&>th]:px-2 [&>th]:py-1">
           <th>Season</th>
           <th>Show</th>
           <th>Doctor</th>
           <th>Showrunner</th>
-          <th>RT Critic</th>
-          <th>RT Audience</th>
-          <th>MC Critic</th>
-          <th>MC User</th>
-          <th>TMDB</th>
-          <th>User Average</th>
+          <th class="text-right">RT<FootnoteNum num={1} /> Critic</th>
+          <th class="text-right">RT<FootnoteNum num={1} /> Audience</th>
+          <th class="text-right">MC<FootnoteNum num={2} /> Critic</th>
+          <th class="text-right">MC<FootnoteNum num={2} /> User</th>
+          <th class="text-right">TMDB<FootnoteNum num={3} /></th>
+          <th class="text-right">User Average</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="divide-y [&>tr]:divide-x divide-slate-200">
         {
           downloadedData.map((data) => (
-            <tr>
+            <tr class="[&>td]:px-2 hover:bg-slate-100">
               <td>{data.name}</td>
               <td>{data.showName}</td>
               <td>
                 <abbr title={data.meta.doctorPlayedBy}>{data.meta.doctor}</abbr>
               </td>
               <td>{data.meta.showrunner}</td>
-              <td>{data.rottenTomatoesData?.critics?.score}</td>
-              <td>{data.rottenTomatoesData?.audience?.score}</td>
-              <td>{data.metaCriticData?.metaScore}</td>
-              <td>{data.metaCriticData?.userScore}</td>
-              <td>{data.tmdbData?.voteAverage}</td>
-              <td>
+              <td class="text-right">
+                {data.rottenTomatoesData?.critics?.score}
+              </td>
+              <td class="text-right">
+                {data.rottenTomatoesData?.audience?.score}
+              </td>
+              <td class="text-right">{data.metaCriticData?.metaScore}</td>
+              <td class="text-right">{data.metaCriticData?.userScore}</td>
+              <td class="text-right">{data.tmdbData?.voteAverage}</td>
+              <td class="text-right">
                 {round(
                   avg(
                     Number(data.rottenTomatoesData?.critics?.score) / 10 ||
@@ -62,6 +68,9 @@ const chartData = mapDataForChart(downloadedData);
         }
       </tbody>
     </table>
+    <FootnoteRef num={1}>Rotten Tomatoes</FootnoteRef>
+    <FootnoteRef num={2}>Metacritic</FootnoteRef>
+    <FootnoteRef num={3}>The Movie Database</FootnoteRef>
     <div id="chart"></div>
     <script>
       import { setupChart } from "../chart";
