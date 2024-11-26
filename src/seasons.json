@@ -13,7 +13,7 @@
     "meta": {
       "showrunner": "Russell T Davies",
       "doctor": "9th Doctor",
-      "doctor_played_by": "Christopher Eccleston"
+      "doctorPlayedBy": "Christopher Eccleston"
     }
   },
   {
@@ -30,7 +30,7 @@
     "meta": {
       "showrunner": "Russell T Davies",
       "doctor": "10th Doctor",
-      "doctor_played_by": "David Tennant"
+      "doctorPlayedBy": "David Tennant"
     }
   },
   {
@@ -47,7 +47,7 @@
     "meta": {
       "showrunner": "Russell T Davies",
       "doctor": "10th Doctor",
-      "doctor_played_by": "David Tennant"
+      "doctorPlayedBy": "David Tennant"
     }
   },
   {
@@ -64,7 +64,7 @@
     "meta": {
       "showrunner": "Russell T Davies",
       "doctor": "10th Doctor",
-      "doctor_played_by": "David Tennant"
+      "doctorPlayedBy": "David Tennant"
     }
   },
   {
@@ -81,7 +81,7 @@
     "meta": {
       "showrunner": "Steven Moffat",
       "doctor": "11th Doctor",
-      "doctor_played_by": "Matt Smith"
+      "doctorPlayedBy": "Matt Smith"
     }
   },
   {
@@ -98,7 +98,7 @@
     "meta": {
       "showrunner": "Steven Moffat",
       "doctor": "11th Doctor",
-      "doctor_played_by": "Matt Smith"
+      "doctorPlayedBy": "Matt Smith"
     }
   },
   {
@@ -115,7 +115,7 @@
     "meta": {
       "showrunner": "Steven Moffat",
       "doctor": "11th Doctor",
-      "doctor_played_by": "Matt Smith"
+      "doctorPlayedBy": "Matt Smith"
     }
   },
   {
@@ -132,7 +132,7 @@
     "meta": {
       "showrunner": "Steven Moffat",
       "doctor": "12th Doctor",
-      "doctor_played_by": "Peter Capaldi"
+      "doctorPlayedBy": "Peter Capaldi"
     }
   },
   {
@@ -149,7 +149,7 @@
     "meta": {
       "showrunner": "Steven Moffat",
       "doctor": "12th Doctor",
-      "doctor_played_by": "Peter Capaldi"
+      "doctorPlayedBy": "Peter Capaldi"
     }
   },
   {
@@ -166,7 +166,7 @@
     "meta": {
       "showrunner": "Steven Moffat",
       "doctor": "12th Doctor",
-      "doctor_played_by": "Peter Capaldi"
+      "doctorPlayedBy": "Peter Capaldi"
     }
   },
   {
@@ -183,7 +183,7 @@
     "meta": {
       "showrunner": "Chris Chibnall",
       "doctor": "13th Doctor",
-      "doctor_played_by": "Jodie Whittaker"
+      "doctorPlayedBy": "Jodie Whittaker"
     }
   },
   {
@@ -200,7 +200,7 @@
     "meta": {
       "showrunner": "Chris Chibnall",
       "doctor": "13th Doctor",
-      "doctor_played_by": "Jodie Whittaker"
+      "doctorPlayedBy": "Jodie Whittaker"
     }
   },
   {
@@ -217,7 +217,7 @@
     "meta": {
       "showrunner": "Chris Chibnall",
       "doctor": "13th Doctor",
-      "doctor_played_by": "Jodie Whittaker"
+      "doctorPlayedBy": "Jodie Whittaker"
     }
   },
   {
@@ -234,7 +234,7 @@
     "meta": {
       "showrunner": "Russell T Davies",
       "doctor": "15th Doctor",
-      "doctor_played_by": "Ncuti Gatwa"
+      "doctorPlayedBy": "Ncuti Gatwa"
     }
   }
 ]
