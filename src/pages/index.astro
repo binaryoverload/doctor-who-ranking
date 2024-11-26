@@ -1,6 +1,7 @@
 ---
 import { mapDataForChart } from "../chart";
 import { downloadData } from "../downloadData";
+import { avg, round } from "../util";
 
 const downloadedData = await downloadData();
 const chartData = mapDataForChart(downloadedData);
@@ -25,6 +26,7 @@ const chartData = mapDataForChart(downloadedData);
           <th>MC Critic</th>
           <th>MC User</th>
           <th>TMDB</th>
+          <th>User Average</th>
         </tr>
       </thead>
       <tbody>
@@ -38,6 +40,17 @@ const chartData = mapDataForChart(downloadedData);
               <td>{data.metaCriticData?.metaScore}</td>
               <td>{data.metaCriticData?.userScore}</td>
               <td>{data.tmdbData?.voteAverage}</td>
+              <td>
+                {round(
+                  avg(
+                    Number(data.rottenTomatoesData?.critics?.score) / 10 ||
+                      null,
+                    data.metaCriticData?.userScore,
+                    data.tmdbData?.voteAverage
+                  ),
+                  1
+                )}
+              </td>
             </tr>
           ))
         }
