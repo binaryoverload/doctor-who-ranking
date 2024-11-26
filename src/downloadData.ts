@@ -1,7 +1,6 @@
 import seasonJson from "./seasons.json" assert { type: "json" };
 import { logger } from "@it-astro:logger";
 import * as cheerio from "cheerio";
-import { log } from "console";
 import * as fs from "fs/promises";
 import { createHash } from "crypto";
 
