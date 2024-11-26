@@ -1,0 +1,36 @@
+<!-- TARDIS SVG by Timothy Rezendes is marked with CC0 1.0. To view a copy of this license, visit http://creativecommons.org/publicdomain/zero/1.0 -->
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1915">
+  <rect x="460" y="35" width="80" height="110" style="fill:rgb(195, 203, 227);fill-opacity:0.7" />
+  <path d="M 459 70 Q 494 61 541 70" style="fill:none;stroke:rgb(58, 73, 106);stroke-width:3;stroke-linecap:round" />
+  <path d="M 459 115 Q 494 106 541 115" style="fill:none;stroke:rgb(58, 73, 106);stroke-width:3;stroke-linecap:round" />
+  <polygon points="455,35 545,35 500,0" style="fill:rgb(58, 73, 106);stroke:rgb(36, 45, 66);stroke-width:2" />" />
+  <rect x="450" y="145" width="100" height="30" style="fill:rgb(58, 73, 106);stroke:rgb(36, 45, 66);stroke-width:2" />" />
+  <rect x="130" y="175" width="740" height="75" style="fill:rgb(58, 73, 106);stroke:rgb(36, 45, 66);stroke-width:2" />" />
+  <rect x="90" y="250" width="820" height="55" style="fill:rgb(58, 73, 106);stroke:rgb(36, 45, 66);stroke-width:2" />" />
+  <rect x="45" y="305" width="910" height="1515" style="fill:rgb(58, 73, 106);stroke:rgb(36, 45, 66);stroke-width:2" />" />
+  <rect x="100" y="315" width="800" height="80" style="fill:rgb(0,0,0)" />
+  <rect x="0" y="1820" width="1000" height="95" style="fill:rgb(58, 73, 106);stroke:rgb(36, 45, 66);stroke-width:2" />" />
+  <rect x="200" y="815" width="245" height="280" style="fill:rgb(58, 73, 106);stroke:rgb(36, 45, 66);stroke-width:6" />
+  <rect x="560" y="815" width="245" height="280" style="fill:rgb(58, 73, 106);stroke:rgb(36, 45, 66);stroke-width:6" />
+  <rect x="200" y="1145" width="245" height="280" style="fill:rgb(58, 73, 106);stroke:rgb(36, 45, 66);stroke-width:6" />
+  <rect x="560" y="1145" width="245" height="280" style="fill:rgb(58, 73, 106);stroke:rgb(36, 45, 66);stroke-width:6" />
+  <rect x="200" y="1475" width="245" height="280" style="fill:rgb(58, 73, 106);stroke:rgb(36, 45, 66);stroke-width:6" />
+  <rect x="560" y="1475" width="245" height="280" style="fill:rgb(58, 73, 106);stroke:rgb(36, 45, 66);stroke-width:6" />
+  <rect x="200" y="485" width="245" height="280" style="fill:rgb(195, 203, 227)" />
+  <rect x="560" y="485" width="245" height="280" style="fill:rgb(195, 203, 227)" />
+  <line x1="282" y1="485" x2="282" y2="765" style="stroke:rgb(58, 73, 106);stroke-width:3" />
+  <line x1="363" y1="485" x2="363" y2="765" style="stroke:rgb(58, 73, 106);stroke-width:3" />
+  <line x1="200" y1="625" x2="445" y2="625" style="stroke:rgb(58, 73, 106);stroke-width:3" />
+  <line x1="642" y1="485" x2="642" y2="765" style="stroke:rgb(58, 73, 106);stroke-width:3" />
+  <line x1="723" y1="485" x2="723" y2="765" style="stroke:rgb(58, 73, 106);stroke-width:3" />
+  <line x1="560" y1="625" x2="805" y2="625" style="stroke:rgb(58, 73, 106);stroke-width:3" />
+  <line x1="475" y1="35" x2="475" y2="145" style="stroke:rgb(58, 73, 106);stroke-width:3" />
+  <line x1="515" y1="35" x2="515" y2="145" style="stroke:rgb(58, 73, 106);stroke-width:3" />
+  <text>
+    <tspan x="225" y="370" textlength="100%" font-family="sans-serif" font-size="3rem" style="fill:white;">POLICE</tspan>
+    <tspan x="465" y="352" textlength="100%" font-family="sans-serif" font-size="2rem" style="fill:white;">PUBLIC</tspan>
+    <tspan x="482" y="380" textlength="100%" font-family="sans-serif" font-size="2rem" style="fill:white;">CALL</tspan>
+    <tspan x="640" y="370" textlength="100%" font-family="sans-serif" font-size="3rem" style="fill:white;">BOX</tspan>
+  </text>
+</svg>

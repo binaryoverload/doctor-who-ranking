@@ -10,7 +10,7 @@ interface Props {
 
 <table class="border border-slate-400 text-left">
   <thead class="border-b border-slate-400">
-    <tr class="[&>th]:px-2 [&>th]:py-1 divide-x divide-slate-200">
+    <tr class="[&>th]:px-2 [&>th]:py-1 divide-x divide-slate-200 text-sm">
       <th>Season</th>
       <th>Show</th>
       <th>Doctor</th>
@@ -36,7 +36,8 @@ interface Props {
         <p class="text-xs font-semibold text-center">(0-10)</p>
       </th>
       <th class="text-right">
-        User Average <br />
+        User Average<FootnoteNum num={4} />
+        <br />
         <p class="text-xs font-semibold text-center">(0-10)</p>
       </th>
     </tr>
@@ -44,7 +45,7 @@ interface Props {
   <tbody class="divide-y [&>tr]:divide-x divide-slate-200">
     {
       Astro.props.downloadedData.map((data) => (
-        <tr class="[&>td]:px-2 hover:bg-slate-100">
+        <tr class="[&>td]:px-2 [&>td]:py-0 hover:bg-slate-100 text-sm/5">
           <td>{data.name}</td>
           <td>{data.showName}</td>
           <td>
