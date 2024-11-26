@@ -1,15 +1,15 @@
 ---
-import { mapDataForChart } from "../chart";
-import DataTable from "../components/DataTable.astro";
-import FootnoteRef from "../components/FootnoteRef.astro";
-import { downloadData } from "../downloadData";
+import { mapDataForChart } from "../chart"
+import DataTable from "../components/DataTable.astro"
+import FootnoteRef from "../components/FootnoteRef.astro"
+import { downloadData } from "../downloadData"
 
-const downloadedData = await downloadData();
-const chartData = mapDataForChart(downloadedData);
+const downloadedData = await downloadData()
+const chartData = mapDataForChart(downloadedData)
 
 const currentDateTime = new Date().toLocaleString("en-GB", {
   dateStyle: "medium",
-});
+})
 ---
 
 <html lang="en">
