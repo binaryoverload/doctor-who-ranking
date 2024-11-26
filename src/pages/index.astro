@@ -21,6 +21,8 @@ const chartData = mapDataForChart(downloadedData);
         <tr>
           <th>Season</th>
           <th>Show</th>
+          <th>Doctor</th>
+          <th>Showrunner</th>
           <th>RT Critic</th>
           <th>RT Audience</th>
           <th>MC Critic</th>
@@ -35,6 +37,10 @@ const chartData = mapDataForChart(downloadedData);
             <tr>
               <td>{data.name}</td>
               <td>{data.showName}</td>
+              <td>
+                <abbr title={data.meta.doctorPlayedBy}>{data.meta.doctor}</abbr>
+              </td>
+              <td>{data.meta.showrunner}</td>
               <td>{data.rottenTomatoesData?.critics?.score}</td>
               <td>{data.rottenTomatoesData?.audience?.score}</td>
               <td>{data.metaCriticData?.metaScore}</td>

@@ -59,7 +59,11 @@ export type SeasonData = {
   tmdbData?: TmdbSeasonData;
   rottenTomatoesData?: RTSeasonData;
   metaCriticData?: MetaCriticData;
-  special?: boolean | undefined;
+  meta: {
+    showrunner: string;
+    doctor: string;
+    doctorPlayedBy: string;
+  }
 };
 
 type Cache = {
