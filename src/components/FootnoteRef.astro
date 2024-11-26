@@ -6,9 +6,13 @@ type Props = {
 };
 ---
 
-<p id=`footnote-${Astro.props.num}` class="group">
-  <FootnoteNum num={Astro.props.num} />
-  <span class="group-target:bg-yellow-200">
-    <slot />
-  </span>
-</p>
+<div id=`footnote-${Astro.props.num}` class="group">
+  <div
+    class="flex space-x-1 w-max group-target:bg-yellow-200 px-2 py-1 bg-inherit transition-colors duration-250"
+  >
+    <FootnoteNum num={Astro.props.num} />
+    <span class="max-w-lg">
+      <slot />
+    </span>
+  </div>
+</div>

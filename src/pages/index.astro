@@ -1,9 +1,8 @@
 ---
 import { mapDataForChart } from "../chart";
-import FootnoteNum from "../components/FootnoteNum.astro";
+import DataTable from "../components/DataTable.astro";
 import FootnoteRef from "../components/FootnoteRef.astro";
 import { downloadData } from "../downloadData";
-import { avg, round } from "../util";
 
 const downloadedData = await downloadData();
 const chartData = mapDataForChart(downloadedData);
@@ -18,60 +17,24 @@ const chartData = mapDataForChart(downloadedData);
     <title>Astro</title>
   </head>
   <body>
-    <table class="border border-slate-500 text-left">
-      <thead class="border-b border-slate-700">
-        <tr class="[&>th]:px-2 [&>th]:py-1">
-          <th>Season</th>
-          <th>Show</th>
-          <th>Doctor</th>
-          <th>Showrunner</th>
-          <th class="text-right">RT<FootnoteNum num={1} /> Critic</th>
-          <th class="text-right">RT<FootnoteNum num={1} /> Audience</th>
-          <th class="text-right">MC<FootnoteNum num={2} /> Critic</th>
-          <th class="text-right">MC<FootnoteNum num={2} /> User</th>
-          <th class="text-right">TMDB<FootnoteNum num={3} /></th>
-          <th class="text-right">User Average</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y [&>tr]:divide-x divide-slate-200">
-        {
-          downloadedData.map((data) => (
-            <tr class="[&>td]:px-2 hover:bg-slate-100">
-              <td>{data.name}</td>
-              <td>{data.showName}</td>
-              <td>
-                <abbr title={data.meta.doctorPlayedBy}>{data.meta.doctor}</abbr>
-              </td>
-              <td>{data.meta.showrunner}</td>
-              <td class="text-right">
-                {data.rottenTomatoesData?.critics?.score}
-              </td>
-              <td class="text-right">
-                {data.rottenTomatoesData?.audience?.score}
-              </td>
-              <td class="text-right">{data.metaCriticData?.metaScore}</td>
-              <td class="text-right">{data.metaCriticData?.userScore}</td>
-              <td class="text-right">{data.tmdbData?.voteAverage}</td>
-              <td class="text-right">
-                {round(
-                  avg(
-                    Number(data.rottenTomatoesData?.critics?.score) / 10 ||
-                      null,
-                    data.metaCriticData?.userScore,
-                    data.tmdbData?.voteAverage
-                  ),
-                  1
-                )}
-              </td>
-            </tr>
-          ))
-        }
-      </tbody>
-    </table>
-    <FootnoteRef num={1}>Rotten Tomatoes</FootnoteRef>
-    <FootnoteRef num={2}>Metacritic</FootnoteRef>
-    <FootnoteRef num={3}>The Movie Database</FootnoteRef>
-    <div id="chart"></div>
+    <div class="container mx-auto">
+      <DataTable downloadedData={downloadedData} />
+      <FootnoteRef num={1}>Rotten Tomatoes</FootnoteRef>
+      <FootnoteRef num={2}>Metacritic</FootnoteRef>
+      <FootnoteRef num={3}>The Movie Database</FootnoteRef>
+      <FootnoteRef num={4}
+        >Calculated as the average of the Rotten Tomatoes (Scaled down to 0-10),
+        Metacritic, and The Movie Database user scores. Missing values are
+        excluded</FootnoteRef
+      >
+      <div id="chart"></div>
+      <hr class="mt-12 mb-4" />
+      <p class="text-sm text-slate-500">
+        Doctor Who and all related trademarks and copyrights are the property of
+        the BBC. This site is fan-made and not affiliated with or endorsed by
+        the BBC.
+      </p>
+    </div>
     <script>
       import { setupChart } from "../chart";
 
