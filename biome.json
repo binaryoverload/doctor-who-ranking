@@ -27,7 +27,8 @@
     "formatter": {
       "quoteStyle": "double",
       "semicolons": "asNeeded",
-      "quoteProperties": "asNeeded"
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "es5"
     }
   }
 }
