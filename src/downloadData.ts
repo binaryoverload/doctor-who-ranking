@@ -62,6 +62,8 @@ export type SeasonData = {
     showrunner: string
     doctor: string
     doctorPlayedBy: string
+    startDate: string
+    endDate: string
   }
 }
 

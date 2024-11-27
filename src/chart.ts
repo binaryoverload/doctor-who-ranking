@@ -3,7 +3,8 @@ import type { SeasonData } from "./downloadData"
 
 export function mapDataForChart(data: SeasonData[]) {
   return data.map((d) => ({
-    id: `${d.showName} - ${d.id}`,
+    id: d.id,
+    name: d.name,
     criticScore: Number(d.rottenTomatoesData?.critics?.score) || null,
     audienceScore: Number(d.rottenTomatoesData?.audience?.score) || null,
     tmdbScore: Number(d.tmdbData?.voteAverage) || null,
@@ -46,39 +47,36 @@ export function setupChart(
       {
         type: "category",
         position: "bottom",
-        label: {
-          formatter: (params) => `Season ${params.value.split(" - ")[1]}`,
-        },
       },
     ],
     series: [
       {
         type: "line",
-        xKey: "id",
+        xKey: "name",
         yKey: "criticScore",
         yName: "Rotten Tomatoes Critic Score",
       },
       {
         type: "line",
-        xKey: "id",
+        xKey: "name",
         yKey: "audienceScore",
         yName: "Rotten Tomatoes Audience Score",
       },
       {
         type: "line",
-        xKey: "id",
+        xKey: "name",
         yKey: "tmdbScore",
         yName: "TMDB Score",
       },
       {
         type: "line",
-        xKey: "id",
+        xKey: "name",
         yKey: "metaUserScore",
         yName: "MetaCritic User Score",
       },
       {
         type: "line",
-        xKey: "id",
+        xKey: "name",
         yKey: "metaScore",
         yName: "MetaCritic Critic Score",
       },

@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-a {
+.link {
   @apply underline hover:no-underline;
 }
