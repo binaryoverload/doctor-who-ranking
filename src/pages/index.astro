@@ -21,7 +21,7 @@ const currentDateTime = formatDate(new Date())
     <title>Doctor Who Ratings</title>
   </head>
   <body>
-    <div class="container mx-auto pt-6 lg:pt-12 px-2">
+    <div class="container mx-auto pt-6 lg:pt-12 px-2 text-pretty">
       <div class="text-center">
         <div class="flex justify-center items-center gap-4">
           <img src="/tardis.svg" alt="TARDIS" width="25" />
@@ -60,46 +60,50 @@ const currentDateTime = formatDate(new Date())
             >The average of the Rotten Tomatoes (Scaled to 0-10), Metacritic,
             and TMDB audience scores. Missing values are excluded</FootnoteRef
           >
+          <FootnoteRef num={5}
+            >Ranked by audience average score - ties are possible when the score
+            is the same</FootnoteRef
+          >
+        </div>
+
+        <div id="chart" class="max-w-screen-lg w-full mx-auto"></div>
+        <div class="mt-10 mb-4 text-center">
+          <hr />
+          <p class="text-sm mt-4 text-slate-500">
+            Doctor Who and all related trademarks and copyrights are the
+            property of the BBC. This site is fan-made and not affiliated with
+            or endorsed by the BBC.
+          </p>
+          <p class="text-sm text-slate-500 mt-2">
+            Made with 🪄, Astro and Tailwind CSS &middot; <a
+              target="_blank"
+              class="link"
+              href="https://github.com/binaryoverload/doctor-who-ranking"
+              >GitHub Repo</a
+            > &middot; <a
+              target="_blank"
+              class="link"
+              href="https://github.com/binaryoverload">@binaryoverload</a
+            >
+          </p>
         </div>
       </div>
+      <script>
+        import { setupChart } from "../chart"
 
-      <div id="chart" class="max-w-screen-lg mx-auto"></div>
-      <div class="mt-10 mb-4 text-center">
-        <hr />
-        <p class="text-sm mt-4 text-slate-500">
-          Doctor Who and all related trademarks and copyrights are the property
-          of the BBC. This site is fan-made and not affiliated with or endorsed
-          by the BBC.
-        </p>
-        <p class="text-sm text-slate-500 mt-2">
-          Made with 🪄, Astro and Tailwind CSS &middot; <a
-            target="_blank"
-            class="link"
-            href="https://github.com/binaryoverload/doctor-who-ranking"
-            >GitHub Repo</a
-          > &middot; <a
-            target="_blank"
-            class="link"
-            href="https://github.com/binaryoverload">@binaryoverload</a
-          >
-        </p>
-      </div>
-    </div>
-    <script>
-      import { setupChart } from "../chart"
-
-      declare global {
-        interface Window {
-          setupChart: typeof setupChart
+        declare global {
+          interface Window {
+            setupChart: typeof setupChart
+          }
         }
-      }
 
-      window.setupChart = setupChart
-    </script>
-    <script is:inline define:vars={{ chartData }}>
-      document.addEventListener("DOMContentLoaded", () => {
-        window.setupChart(chartData, document.getElementById("chart"))
-      })
-    </script>
+        window.setupChart = setupChart
+      </script>
+      <script is:inline define:vars={{ chartData }}>
+        document.addEventListener("DOMContentLoaded", () => {
+          window.setupChart(chartData, document.getElementById("chart"))
+        })
+      </script>
+    </div>
   </body>
 </html>
