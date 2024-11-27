@@ -1,268 +1,268 @@
 [
-	{
-		"showId": "doctor_who",
-		"showName": "Doctor Who (2005)",
-		"id": "1",
-		"name": "Season 1",
-		"rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s01",
-		"metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-1",
-		"tmdb": {
-			"seriesId": 57243,
-			"seasonId": 58468
-		},
-		"meta": {
-			"showrunner": "Russell T Davies",
-			"doctor": "9th Doctor",
-			"doctorPlayedBy": "Christopher Eccleston",
-			"startDate": "2005-03-26",
-			"endDate": "2005-06-18"
-		}
-	},
-	{
-		"showId": "doctor_who",
-		"showName": "Doctor Who (2005)",
-		"id": "2",
-		"name": "Season 2",
-		"rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s02",
-		"metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-2",
-		"tmdb": {
-			"seriesId": 57243,
-			"seasonId": 58469
-		},
-		"meta": {
-			"showrunner": "Russell T Davies",
-			"doctor": "10th Doctor",
-			"doctorPlayedBy": "David Tennant",
-			"startDate": "2006-04-15",
-			"endDate": "2006-07-08"
-		}
-	},
-	{
-		"showId": "doctor_who",
-		"showName": "Doctor Who (2005)",
-		"id": "3",
-		"name": "Season 3",
-		"rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s03",
-		"metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-3",
-		"tmdb": {
-			"seriesId": 57243,
-			"seasonId": 58470
-		},
-		"meta": {
-			"showrunner": "Russell T Davies",
-			"doctor": "10th Doctor",
-			"doctorPlayedBy": "David Tennant",
-			"startDate": "2007-03-31",
-			"endDate": "2007-06-30"
-		}
-	},
-	{
-		"showId": "doctor_who",
-		"showName": "Doctor Who (2005)",
-		"id": "4",
-		"name": "Season 4",
-		"rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s04",
-		"metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-4",
-		"tmdb": {
-			"seriesId": 57243,
-			"seasonId": 58471
-		},
-		"meta": {
-			"showrunner": "Russell T Davies",
-			"doctor": "10th Doctor",
-			"doctorPlayedBy": "David Tennant",
-			"startDate": "2008-04-05",
-			"endDate": "2008-07-05"
-		}
-	},
-	{
-		"showId": "doctor_who",
-		"showName": "Doctor Who (2005)",
-		"id": "5",
-		"name": "Season 5",
-		"rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s05",
-		"metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-5",
-		"tmdb": {
-			"seriesId": 57243,
-			"seasonId": 58472
-		},
-		"meta": {
-			"showrunner": "Steven Moffat",
-			"doctor": "11th Doctor",
-			"doctorPlayedBy": "Matt Smith",
-			"startDate": "2010-04-03",
-			"endDate": "2010-06-26"
-		}
-	},
-	{
-		"showId": "doctor_who",
-		"showName": "Doctor Who (2005)",
-		"id": "6",
-		"name": "Season 6",
-		"rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s06",
-		"metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-6",
-		"tmdb": {
-			"seriesId": 57243,
-			"seasonId": 58473
-		},
-		"meta": {
-			"showrunner": "Steven Moffat",
-			"doctor": "11th Doctor",
-			"doctorPlayedBy": "Matt Smith",
-			"startDate": "2011-04-23",
-			"endDate": "2011-10-01"
-		}
-	},
-	{
-		"showId": "doctor_who",
-		"showName": "Doctor Who (2005)",
-		"id": "7",
-		"name": "Season 7",
-		"rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s07",
-		"metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-7",
-		"tmdb": {
-			"seriesId": 57243,
-			"seasonId": 58474
-		},
-		"meta": {
-			"showrunner": "Steven Moffat",
-			"doctor": "11th Doctor",
-			"doctorPlayedBy": "Matt Smith",
-			"startDate": "2012-09-01",
-			"endDate": "2013-05-18"
-		}
-	},
-	{
-		"showId": "doctor_who",
-		"showName": "Doctor Who (2005)",
-		"id": "8",
-		"name": "Season 8",
-		"rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s08",
-		"metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-8",
-		"tmdb": {
-			"seriesId": 57243,
-			"seasonId": 58475
-		},
-		"meta": {
-			"showrunner": "Steven Moffat",
-			"doctor": "12th Doctor",
-			"doctorPlayedBy": "Peter Capaldi",
-			"startDate": "2014-08-23",
-			"endDate": "2014-11-08"
-		}
-	},
-	{
-		"showId": "doctor_who",
-		"showName": "Doctor Who (2005)",
-		"id": "9",
-		"name": "Season 9",
-		"rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s09",
-		"metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-9",
-		"tmdb": {
-			"seriesId": 57243,
-			"seasonId": 64188
-		},
-		"meta": {
-			"showrunner": "Steven Moffat",
-			"doctor": "12th Doctor",
-			"doctorPlayedBy": "Peter Capaldi",
-			"startDate": "2015-09-19",
-			"endDate": "2015-12-05"
-		}
-	},
-	{
-		"showId": "doctor_who",
-		"showName": "Doctor Who (2005)",
-		"id": "10",
-		"name": "Season 10",
-		"rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s10",
-		"metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-10",
-		"tmdb": {
-			"seriesId": 57243,
-			"seasonId": 76615
-		},
-		"meta": {
-			"showrunner": "Steven Moffat",
-			"doctor": "12th Doctor",
-			"doctorPlayedBy": "Peter Capaldi",
-			"startDate": "2017-04-15",
-			"endDate": "2017-07-01"
-		}
-	},
-	{
-		"showId": "doctor_who",
-		"showName": "Doctor Who (2005)",
-		"id": "11",
-		"name": "Season 11",
-		"rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s11",
-		"metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-11",
-		"tmdb": {
-			"seriesId": 57243,
-			"seasonId": 97100
-		},
-		"meta": {
-			"showrunner": "Chris Chibnall",
-			"doctor": "13th Doctor",
-			"doctorPlayedBy": "Jodie Whittaker",
-			"startDate": "2018-10-07",
-			"endDate": "2018-12-09"
-		}
-	},
-	{
-		"showId": "doctor_who",
-		"showName": "Doctor Who (2005)",
-		"id": "12",
-		"name": "Season 12",
-		"rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s12",
-		"metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-12",
-		"tmdb": {
-			"seriesId": 57243,
-			"seasonId": 135741
-		},
-		"meta": {
-			"showrunner": "Chris Chibnall",
-			"doctor": "13th Doctor",
-			"doctorPlayedBy": "Jodie Whittaker",
-			"startDate": "2020-01-01",
-			"endDate": "2020-03-01"
-		}
-	},
-	{
-		"showId": "doctor_who",
-		"showName": "Doctor Who (2005)",
-		"id": "13",
-		"name": "Flux",
-		"rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s13",
-		"metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-13",
-		"tmdb": {
-			"seriesId": 57243,
-			"seasonId": 175012
-		},
-		"meta": {
-			"showrunner": "Chris Chibnall",
-			"doctor": "13th Doctor",
-			"doctorPlayedBy": "Jodie Whittaker",
-			"startDate": "2021-10-31",
-			"endDate": "2021-12-05"
-		}
-	},
-	{
-		"showId": "doctor_who_2023",
-		"showName": "Doctor Who (2023)",
-		"id": "14",
-		"name": "Season 14",
-		"rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who_2023/s01",
-		"metaCriticUrl": "https://www.metacritic.com/tv/doctor-who-2024/season-1",
-		"tmdb": {
-			"seriesId": 239770,
-			"seasonId": 366207
-		},
-		"meta": {
-			"showrunner": "Russell T Davies",
-			"doctor": "15th Doctor",
-			"doctorPlayedBy": "Ncuti Gatwa",
-			"startDate": "2024-05-11",
-			"endDate": "2024-06-22"
-		}
-	}
+  {
+    "showId": "doctor_who",
+    "showName": "Doctor Who (2005)",
+    "id": "1",
+    "name": "Season 1",
+    "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s01",
+    "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-1",
+    "tmdb": {
+      "seriesId": 57243,
+      "seasonId": 58468
+    },
+    "meta": {
+      "showrunner": "Russell T Davies",
+      "doctor": "9th Doctor",
+      "doctorPlayedBy": "Christopher Eccleston",
+      "startDate": "2005-03-26",
+      "endDate": "2005-06-18"
+    }
+  },
+  {
+    "showId": "doctor_who",
+    "showName": "Doctor Who (2005)",
+    "id": "2",
+    "name": "Season 2",
+    "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s02",
+    "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-2",
+    "tmdb": {
+      "seriesId": 57243,
+      "seasonId": 58469
+    },
+    "meta": {
+      "showrunner": "Russell T Davies",
+      "doctor": "10th Doctor",
+      "doctorPlayedBy": "David Tennant",
+      "startDate": "2006-04-15",
+      "endDate": "2006-07-08"
+    }
+  },
+  {
+    "showId": "doctor_who",
+    "showName": "Doctor Who (2005)",
+    "id": "3",
+    "name": "Season 3",
+    "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s03",
+    "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-3",
+    "tmdb": {
+      "seriesId": 57243,
+      "seasonId": 58470
+    },
+    "meta": {
+      "showrunner": "Russell T Davies",
+      "doctor": "10th Doctor",
+      "doctorPlayedBy": "David Tennant",
+      "startDate": "2007-03-31",
+      "endDate": "2007-06-30"
+    }
+  },
+  {
+    "showId": "doctor_who",
+    "showName": "Doctor Who (2005)",
+    "id": "4",
+    "name": "Season 4",
+    "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s04",
+    "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-4",
+    "tmdb": {
+      "seriesId": 57243,
+      "seasonId": 58471
+    },
+    "meta": {
+      "showrunner": "Russell T Davies",
+      "doctor": "10th Doctor",
+      "doctorPlayedBy": "David Tennant",
+      "startDate": "2008-04-05",
+      "endDate": "2008-07-05"
+    }
+  },
+  {
+    "showId": "doctor_who",
+    "showName": "Doctor Who (2005)",
+    "id": "5",
+    "name": "Season 5",
+    "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s05",
+    "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-5",
+    "tmdb": {
+      "seriesId": 57243,
+      "seasonId": 58472
+    },
+    "meta": {
+      "showrunner": "Steven Moffat",
+      "doctor": "11th Doctor",
+      "doctorPlayedBy": "Matt Smith",
+      "startDate": "2010-04-03",
+      "endDate": "2010-06-26"
+    }
+  },
+  {
+    "showId": "doctor_who",
+    "showName": "Doctor Who (2005)",
+    "id": "6",
+    "name": "Season 6",
+    "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s06",
+    "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-6",
+    "tmdb": {
+      "seriesId": 57243,
+      "seasonId": 58473
+    },
+    "meta": {
+      "showrunner": "Steven Moffat",
+      "doctor": "11th Doctor",
+      "doctorPlayedBy": "Matt Smith",
+      "startDate": "2011-04-23",
+      "endDate": "2011-10-01"
+    }
+  },
+  {
+    "showId": "doctor_who",
+    "showName": "Doctor Who (2005)",
+    "id": "7",
+    "name": "Season 7",
+    "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s07",
+    "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-7",
+    "tmdb": {
+      "seriesId": 57243,
+      "seasonId": 58474
+    },
+    "meta": {
+      "showrunner": "Steven Moffat",
+      "doctor": "11th Doctor",
+      "doctorPlayedBy": "Matt Smith",
+      "startDate": "2012-09-01",
+      "endDate": "2013-05-18"
+    }
+  },
+  {
+    "showId": "doctor_who",
+    "showName": "Doctor Who (2005)",
+    "id": "8",
+    "name": "Season 8",
+    "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s08",
+    "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-8",
+    "tmdb": {
+      "seriesId": 57243,
+      "seasonId": 58475
+    },
+    "meta": {
+      "showrunner": "Steven Moffat",
+      "doctor": "12th Doctor",
+      "doctorPlayedBy": "Peter Capaldi",
+      "startDate": "2014-08-23",
+      "endDate": "2014-11-08"
+    }
+  },
+  {
+    "showId": "doctor_who",
+    "showName": "Doctor Who (2005)",
+    "id": "9",
+    "name": "Season 9",
+    "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s09",
+    "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-9",
+    "tmdb": {
+      "seriesId": 57243,
+      "seasonId": 64188
+    },
+    "meta": {
+      "showrunner": "Steven Moffat",
+      "doctor": "12th Doctor",
+      "doctorPlayedBy": "Peter Capaldi",
+      "startDate": "2015-09-19",
+      "endDate": "2015-12-05"
+    }
+  },
+  {
+    "showId": "doctor_who",
+    "showName": "Doctor Who (2005)",
+    "id": "10",
+    "name": "Season 10",
+    "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s10",
+    "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-10",
+    "tmdb": {
+      "seriesId": 57243,
+      "seasonId": 76615
+    },
+    "meta": {
+      "showrunner": "Steven Moffat",
+      "doctor": "12th Doctor",
+      "doctorPlayedBy": "Peter Capaldi",
+      "startDate": "2017-04-15",
+      "endDate": "2017-07-01"
+    }
+  },
+  {
+    "showId": "doctor_who",
+    "showName": "Doctor Who (2005)",
+    "id": "11",
+    "name": "Season 11",
+    "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s11",
+    "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-11",
+    "tmdb": {
+      "seriesId": 57243,
+      "seasonId": 97100
+    },
+    "meta": {
+      "showrunner": "Chris Chibnall",
+      "doctor": "13th Doctor",
+      "doctorPlayedBy": "Jodie Whittaker",
+      "startDate": "2018-10-07",
+      "endDate": "2018-12-09"
+    }
+  },
+  {
+    "showId": "doctor_who",
+    "showName": "Doctor Who (2005)",
+    "id": "12",
+    "name": "Season 12",
+    "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s12",
+    "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-12",
+    "tmdb": {
+      "seriesId": 57243,
+      "seasonId": 135741
+    },
+    "meta": {
+      "showrunner": "Chris Chibnall",
+      "doctor": "13th Doctor",
+      "doctorPlayedBy": "Jodie Whittaker",
+      "startDate": "2020-01-01",
+      "endDate": "2020-03-01"
+    }
+  },
+  {
+    "showId": "doctor_who",
+    "showName": "Doctor Who (2005)",
+    "id": "13",
+    "name": "Flux",
+    "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who/s13",
+    "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who/season-13",
+    "tmdb": {
+      "seriesId": 57243,
+      "seasonId": 175012
+    },
+    "meta": {
+      "showrunner": "Chris Chibnall",
+      "doctor": "13th Doctor",
+      "doctorPlayedBy": "Jodie Whittaker",
+      "startDate": "2021-10-31",
+      "endDate": "2021-12-05"
+    }
+  },
+  {
+    "showId": "doctor_who_2023",
+    "showName": "Doctor Who (2023)",
+    "id": "14",
+    "name": "Season 14",
+    "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who_2023/s01",
+    "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who-2024/season-1",
+    "tmdb": {
+      "seriesId": 239770,
+      "seasonId": 366207
+    },
+    "meta": {
+      "showrunner": "Russell T Davies",
+      "doctor": "15th Doctor",
+      "doctorPlayedBy": "Ncuti Gatwa",
+      "startDate": "2024-05-11",
+      "endDate": "2024-06-22"
+    }
+  }
 ]
