@@ -16,7 +16,7 @@ function formatAiredDate(startDate: string, endDate: string) {
   return [formatDate(startDate), formatDate(endDate)]
 }
 
-const colours = ["#e67c73", "#ffd666", "#57bb8a"]
+const colours = ["#e67c73", "#ed9d96", "#ffd666", "#57bb8a"]
 const gradient = colorgrad.customGradient(colours, null, "hsv")
 const gradientColours = gradient.colors(20).map((c) => c.hex()) as string[]
 
@@ -25,6 +25,21 @@ function getColour(score: number | string | undefined | null, max: number) {
   return Color(gradientColours[Math.round((Number(score) / max) * 20) - 1])
     .fade(0.1)
     .string()
+}
+
+function getOrdinal(num: number) {
+  const j = num % 10
+  const k = num % 100
+  if (j === 1 && k !== 11) {
+    return "st"
+  }
+  if (j === 2 && k !== 12) {
+    return "nd"
+  }
+  if (j === 3 && k !== 13) {
+    return "rd"
+  }
+  return "th"
 }
 
 const rtCriticColour = getColour(data.rottenTomatoesData?.critics?.score, 100)
@@ -67,5 +82,7 @@ const userAverageColour = getColour(averageScore, 10)
   <td class="text-right" style={{ backgroundColor: userAverageColour }}>
     {averageScore}
   </td>
-  <td class="text-center font-semibold">{rank}</td>
+  <td class="text-center font-semibold"
+    >{rank}<sup class="font-normal">{getOrdinal(rank)}</sup></td
+  >
 </tr>
