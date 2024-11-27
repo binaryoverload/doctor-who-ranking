@@ -2,14 +2,15 @@
 import Color from "color"
 import colorgrad from "colorgrad-js"
 import type { SeasonData } from "../downloadData"
-import * as util from "../util"
 import { formatDate } from "../util"
 
 interface Props {
   data: SeasonData
+  averageScore: number
+  rank: number
 }
 
-const data = Astro.props.data
+const { data, averageScore, rank } = Astro.props
 
 function formatAiredDate(startDate: string, endDate: string) {
   return [formatDate(startDate), formatDate(endDate)]
@@ -25,15 +26,6 @@ function getColour(score: number | string | undefined | null, max: number) {
     .fade(0.1)
     .string()
 }
-
-const averageScore = util.round(
-  util.avg(
-    Number(data.rottenTomatoesData?.critics?.score) / 10 || null,
-    data.metaCriticData?.userScore,
-    data.tmdbData?.voteAverage
-  ),
-  1
-)
 
 const rtCriticColour = getColour(data.rottenTomatoesData?.critics?.score, 100)
 const rtAudienceColour = getColour(
@@ -75,4 +67,5 @@ const userAverageColour = getColour(averageScore, 10)
   <td class="text-right" style={{ backgroundColor: userAverageColour }}>
     {averageScore}
   </td>
+  <td class="text-center font-semibold">{rank}</td>
 </tr>
