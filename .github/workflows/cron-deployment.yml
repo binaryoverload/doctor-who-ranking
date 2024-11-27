@@ -5,9 +5,10 @@ on:
 
 jobs:
   trigger-deployment:
+    name: Trigger Cloudflare deployment
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Trigger Cloudflare deployment
+      - name: Post to Cloudflare Pages Deploy Hook
         run: curl -X POST "${{ secrets.CLOUDFLARE_API_URL }}"
