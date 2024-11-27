@@ -1,15 +1,10 @@
 ---
 import type { SeasonData } from "../downloadData"
-import * as util from "../util"
-import { formatDate } from "../util"
+import DataTableRow from "./DataTableRow.astro"
 import FootnoteNum from "./FootnoteNum.astro"
 
 interface Props {
   downloadedData: SeasonData[]
-}
-
-function formatAiredDate(startDate: string, endDate: string) {
-  return [formatDate(startDate), formatDate(endDate)]
 }
 ---
 
@@ -48,32 +43,6 @@ function formatAiredDate(startDate: string, endDate: string) {
     </tr>
   </thead>
   <tbody class="divide-y [&>tr]:divide-x divide-slate-200">
-    {
-      Astro.props.downloadedData.map((data) => (
-        <tr class="[&>td]:px-2 [&>td]:py-0 hover:bg-slate-100 text-sm/5">
-          <td>{data.name}</td>
-          <td>
-            <abbr title={data.meta.doctorPlayedBy}>{data.meta.doctor}</abbr>
-          </td>
-          <td>{data.meta.showrunner}</td>
-          {formatAiredDate(data.meta.startDate, data.meta.endDate).map((e) => <td >{e}</td>)}
-          <td class="text-right">{data.rottenTomatoesData?.critics?.score}</td>
-          <td class="text-right">{data.rottenTomatoesData?.audience?.score}</td>
-          <td class="text-right">{data.metaCriticData?.metaScore}</td>
-          <td class="text-right">{data.metaCriticData?.userScore}</td>
-          <td class="text-right">{data.tmdbData?.voteAverage}</td>
-          <td class="text-right">
-            {util.round(
-              util.avg(
-                Number(data.rottenTomatoesData?.critics?.score) / 10 || null,
-                data.metaCriticData?.userScore,
-                data.tmdbData?.voteAverage
-              ),
-              1
-            )}
-          </td>
-        </tr>
-      ))
-    }
+    {Astro.props.downloadedData.map((data) => <DataTableRow data={data} />)}
   </tbody>
 </table>
