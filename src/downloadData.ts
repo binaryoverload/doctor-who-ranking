@@ -82,7 +82,7 @@ export async function downloadData() {
     try {
       logger.info("Attempting to read data from cache")
       const cacheData = JSON.parse(
-        await fs.readFile("data-cache.json", "utf-8"),
+        await fs.readFile("data-cache.json", "utf-8")
       ) as Cache
 
       const lastUpdated = new Date(cacheData.lastUpdated)
@@ -105,7 +105,7 @@ export async function downloadData() {
 
   const seasonData = [...seasonJson] as SeasonData[]
   logger.info(
-    `Starting fresh download of data for ${seasonData.length} seasons`,
+    `Starting fresh download of data for ${seasonData.length} seasons`
   )
 
   const series = seasonData.reduce(
@@ -125,7 +125,7 @@ export async function downloadData() {
         name: string
         tmdbId: number
       }
-    >,
+    >
   )
 
   const tmdbSeasons: TmdbSeasonData[] = []
@@ -143,7 +143,7 @@ export async function downloadData() {
     const rtData = await downloadRTData(season.rottenTomatoesUrl)
     const metaCriticData = await downloadMetaCriticData(season.metaCriticUrl)
     const tmdbData = tmdbSeasons.find(
-      (seasonData) => season.tmdb.seasonId === seasonData.id,
+      (seasonData) => season.tmdb.seasonId === seasonData.id
     )
 
     season.rottenTomatoesData = rtData
@@ -198,16 +198,16 @@ async function downloadRTData(rtUrl: string): Promise<RTSeasonData> {
 }
 
 async function downloadMetaCriticData(
-  metaCriticUrl: string,
+  metaCriticUrl: string
 ): Promise<MetaCriticData> {
   logger.debug(`Downloading data from ${metaCriticUrl}`)
   const page = await fetch(metaCriticUrl).then((res) => res.text())
   const $ = cheerio.load(page)
   const metaScore = $(
-    '.c-productHero_scoreInfo .c-siteReviewScore[title*="Metascore"] span',
+    '.c-productHero_scoreInfo .c-siteReviewScore[title*="Metascore"] span'
   ).text()
   const userScore = $(
-    '.c-productHero_scoreInfo .c-siteReviewScore[title*="User score"] span',
+    '.c-productHero_scoreInfo .c-siteReviewScore[title*="User score"] span'
   ).text()
   const data = {
     metaScore: Number(metaScore) || null,

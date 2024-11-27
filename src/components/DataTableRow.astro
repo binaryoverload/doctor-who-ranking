@@ -15,14 +15,14 @@ function formatAiredDate(startDate: string, endDate: string) {
   return [formatDate(startDate), formatDate(endDate)]
 }
 
-const colours = ["#e67c73", "#f3a96d", "#ffd666", "#abc978", "#57bb8a"]
+const colours = ["#e67c73", "#ffd666", "#57bb8a"]
 const gradient = colorgrad.customGradient(colours, null, "hsv")
 const gradientColours = gradient.colors(20).map((c) => c.hex()) as string[]
 
 function getColour(score: number | string | undefined | null, max: number) {
   if (!score) return undefined
   return Color(gradientColours[Math.round((Number(score) / max) * 20) - 1])
-    .fade(0.2)
+    .fade(0.1)
     .string()
 }
 
@@ -30,15 +30,15 @@ const averageScore = util.round(
   util.avg(
     Number(data.rottenTomatoesData?.critics?.score) / 10 || null,
     data.metaCriticData?.userScore,
-    data.tmdbData?.voteAverage,
+    data.tmdbData?.voteAverage
   ),
-  1,
+  1
 )
 
 const rtCriticColour = getColour(data.rottenTomatoesData?.critics?.score, 100)
 const rtAudienceColour = getColour(
   data.rottenTomatoesData?.audience?.score,
-  100,
+  100
 )
 const mcCriticColour = getColour(data.metaCriticData?.metaScore, 100)
 const mcUserColour = getColour(data.metaCriticData?.userScore, 10)

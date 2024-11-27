@@ -10,12 +10,12 @@ export function round(value: number, precision = 0): number {
 
 export function formatDate(
   date: Date | string,
-  dateStyle: Intl.DateTimeFormatOptions["dateStyle"] = "medium",
+  dateStyle: Intl.DateTimeFormatOptions["dateStyle"] = "medium"
 ): string {
   return (typeof date === "string" ? new Date(date) : date).toLocaleString(
     "en-GB",
     {
       dateStyle,
-    },
+    }
   )
 }

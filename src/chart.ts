@@ -15,7 +15,7 @@ export function mapDataForChart(data: SeasonData[]) {
 
 export function setupChart(
   data: ReturnType<typeof mapDataForChart>,
-  element: HTMLElement,
+  element: HTMLElement
 ) {
   const options: AgChartOptions = {
     container: element,
