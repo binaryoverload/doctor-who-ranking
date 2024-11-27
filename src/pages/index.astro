@@ -3,6 +3,7 @@ import { mapDataForChart } from "../chart"
 import DataTable from "../components/DataTable.astro"
 import FootnoteRef from "../components/FootnoteRef.astro"
 import { downloadData } from "../downloadData"
+import "../css/base.css"
 
 const downloadedData = await downloadData()
 const chartData = mapDataForChart(downloadedData)
@@ -34,7 +35,6 @@ const currentDateTime = new Date().toLocaleString("en-GB", {
           <p>
             I originally tracked this in a <a
               href="https://docs.google.com/spreadsheets/d/1-TnaX9iGBOfCbTPVnTmwwFRKdrR959Hus2ttv7NdE08/edit?usp=sharing"
-              class="underline"
               target="_blank">spreadsheet</a
             > but making an auto-updating one with more data sounded more fun :P
           </p>
@@ -60,12 +60,15 @@ const currentDateTime = new Date().toLocaleString("en-GB", {
       </div>
 
       <div id="chart"></div>
-      <div class="mt-10 mb-4">
-        <hr class="mb-4" />
-        <p class="text-sm text-slate-500">
+      <div class="mt-10 mb-4 text-center">
+        <hr />
+        <p class="text-sm mt-4 text-slate-500">
           Doctor Who and all related trademarks and copyrights are the property
           of the BBC. This site is fan-made and not affiliated with or endorsed
           by the BBC.
+        </p>
+        <p class="text-sm text-slate-500 mt-2">
+          Made with 🪄, Astro and Tailwind CSS &middot; <a target="_blank" href="https://github.com/binaryoverload/doctor-who-ranking">GitHub Repo</a> &middot; <a target="_blank" href="https://github.com/binaryoverload">@binaryoverload</a>
         </p>
       </div>
     </div>
