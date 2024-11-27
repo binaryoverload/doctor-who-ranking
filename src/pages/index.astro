@@ -21,7 +21,7 @@ const currentDateTime = formatDate(new Date())
     <title>Doctor Who Ratings</title>
   </head>
   <body>
-    <div class="container mx-auto pt-12">
+    <div class="container mx-auto pt-6 lg:pt-12 max-w-full px-2">
       <div class="text-center">
         <div class="flex justify-center items-center gap-4">
           <img src="/tardis.svg" alt="TARDIS" width="25" />
@@ -41,14 +41,16 @@ const currentDateTime = formatDate(new Date())
           <p>
             This site will <span class="text-xs">(should)</span> auto-update! Updated
             on
-            <span class="font-semibold">{currentDateTime} </span>
+            <abbr class="font-semibold" title={new Date()}>{currentDateTime}</abbr>
           </p>
         </div>
       </div>
 
-      <div class="flex flex-col items-center">
-        <DataTable downloadedData={downloadedData} />
-        <div class="flex text-sm mt-2">
+      <div class="flex flex-col items-center max-w-full">
+        <div class="overflow-x-auto max-w-full">
+          <DataTable downloadedData={downloadedData} />
+        </div>
+        <div class="flex flex-wrap text-sm mt-2">
           <FootnoteRef num={1}>RT: Rotten Tomatoes</FootnoteRef>
           <FootnoteRef num={2}>MC: Metacritic</FootnoteRef>
           <FootnoteRef num={3}>TMDB: The Movie Database</FootnoteRef>
