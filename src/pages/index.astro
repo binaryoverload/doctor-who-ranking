@@ -1,4 +1,5 @@
 ---
+import { undefined } from "astro:schema";
 import { mapDataForChart } from "../chart";
 import DataTable from "../components/DataTable.astro";
 import FootnoteRef from "../components/FootnoteRef.astro";
@@ -6,50 +7,84 @@ import { downloadData } from "../downloadData";
 
 const downloadedData = await downloadData();
 const chartData = mapDataForChart(downloadedData);
+
+const currentDateTime = new Date().toLocaleString("en-GB", {
+  dateStyle: "medium",
+});
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/tardis.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>Doctor Who Ratings</title>
   </head>
   <body>
-    <div class="container mx-auto">
+    <div class="container mx-auto pt-12">
+      <div class="text-center">
+        <div class="flex justify-center items-center gap-4">
+          <img src="/tardis.svg" alt="TARDIS" width="25" />
+          <div>
+            <h1 class="text-3xl font-bold">Doctor Who Ratings</h1>
+            <p class="font-semibold">Who is the Who to watch?</p>
+          </div>
+        </div>
+        <div class="mt-4 mb-8 max-w-prose mx-auto space-y-2">
+          <p>
+            I originally tracked this in a <a
+              href="https://docs.google.com/spreadsheets/d/1-TnaX9iGBOfCbTPVnTmwwFRKdrR959Hus2ttv7NdE08/edit?usp=sharing"
+              class="underline"
+              target="_blank">spreadsheet</a
+            > but making an auto-updating one with more data sounded more fun :P
+          </p>
+          <p>
+            This site will <span class="text-xs">(should)</span> auto-update! Updated
+            on
+            <span class="font-semibold">{currentDateTime} </span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center">
       <DataTable downloadedData={downloadedData} />
-      <FootnoteRef num={1}>Rotten Tomatoes</FootnoteRef>
-      <FootnoteRef num={2}>Metacritic</FootnoteRef>
-      <FootnoteRef num={3}>The Movie Database</FootnoteRef>
-      <FootnoteRef num={4}
-        >Calculated as the average of the Rotten Tomatoes (Scaled down to 0-10),
-        Metacritic, and The Movie Database user scores. Missing values are
-        excluded</FootnoteRef
-      >
-      <div id="chart"></div>
-      <hr class="mt-12 mb-4" />
+      <div class="flex text-sm mt-2">
+        <FootnoteRef num={1}>RT: Rotten Tomatoes</FootnoteRef>
+        <FootnoteRef num={2}>MC: Metacritic</FootnoteRef>
+        <FootnoteRef num={3}>TMDB: The Movie Database</FootnoteRef>
+        <FootnoteRef num={4}
+          >The average of the Rotten Tomatoes (Scaled to 0-10), Metacritic, and
+          TMDB user scores. Missing values are excluded</FootnoteRef
+        >
+      </div>
+    </div>
+
+    <div id="chart"></div>
+    <div class="mt-10 mb-4">
+      <hr class="mb-4" />
       <p class="text-sm text-slate-500">
         Doctor Who and all related trademarks and copyrights are the property of
         the BBC. This site is fan-made and not affiliated with or endorsed by
         the BBC.
       </p>
     </div>
-    <script>
-      import { setupChart } from "../chart";
-
-      declare global {
-        interface Window {
-          setupChart: typeof setupChart;
-        }
-      }
-
-      window.setupChart = setupChart;
-    </script>
-    <script is:inline define:vars={{ chartData }}>
-      document.addEventListener("DOMContentLoaded", () => {
-        window.setupChart(chartData, document.getElementById("chart"));
-      });
-    </script>
   </body>
+  <script>
+    import { setupChart } from "../chart";
+
+    declare global {
+      interface Window {
+        setupChart: typeof setupChart;
+      }
+    }
+
+    window.setupChart = setupChart;
+  </script>
+  <script is:inline define:vars={{ chartData }}>
+    document.addEventListener("DOMContentLoaded", () => {
+      window.setupChart(chartData, document.getElementById("chart"));
+    });
+  </script>
 </html>
