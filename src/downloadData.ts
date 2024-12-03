@@ -3,6 +3,7 @@ import * as fs from "node:fs/promises"
 import { logger } from "@it-astro:logger"
 import * as cheerio from "cheerio"
 import seasonJson from "./seasons.json" assert { type: "json" }
+import { TMDB_API_KEY } from "astro:env/server"
 
 type RTSeasonData = {
   critics: {
@@ -218,11 +219,10 @@ async function downloadMetaCriticData(
 }
 
 async function downloadTmbdSeriesData(seriesId: number) {
-  const apiKey = import.meta.env.TMDB_API_KEY
   const url = `https://api.themoviedb.org/3/tv/${seriesId}?language=en-GB`
   const response = await fetch(url, {
     headers: {
-      Authorization: `Bearer ${apiKey}`,
+      Authorization: `Bearer ${TMDB_API_KEY}`,
     },
   })
   const data = await response.json()
