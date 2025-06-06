@@ -264,5 +264,24 @@
       "startDate": "2024-05-11",
       "endDate": "2024-06-22"
     }
+  },
+  {
+    "showId": "doctor_who_2023",
+    "showName": "Doctor Who (2023)",
+    "id": "15",
+    "name": "Season 15",
+    "rottenTomatoesUrl": "https://www.rottentomatoes.com/tv/doctor_who_2023/s02",
+    "metaCriticUrl": "https://www.metacritic.com/tv/doctor-who-2024/season-2",
+    "tmdb": {
+      "seriesId": 239770,
+      "seasonId": 435118
+    },
+    "meta": {
+      "showrunner": "Russell T Davies",
+      "doctor": "15th Doctor",
+      "doctorPlayedBy": "Ncuti Gatwa",
+      "startDate": "2025-04-12",
+      "endDate": "2025-05-31"
+    }
   }
 ]
